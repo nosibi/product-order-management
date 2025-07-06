@@ -23,11 +23,10 @@
 - DB에는 주문자(회원), 주문한 상품(상품)의 id 값으로 표기되지만 주문 내역을 조회하면 이름으로 반환하도록 구현
 ![Image](https://github.com/user-attachments/assets/a3ed618c-a6c8-4e99-a1f5-933cbc8f7e33)
 ![Image](https://github.com/user-attachments/assets/9eeae508-3d43-4e70-9f02-097f7cf8dd34)
-## 6. 보완할 점
+## 6. 보완
 - 회원 등급에 따른 가격 할인을 적용하는 기능을 추가 구현 :white_check_mark:
 - 회원의 이름으로 주문 내역 리스트를 조회, 동명이인 회원 리스트를 조회하는 기능 구현 ----> QueryDSL을 사용하여 CustomRepository 구성 필요 :white_check_mark:
 - 테스트 코드를 별도로 작성하지 않고 Talend API Tester로 테스트를 했는데 TDD 개발을 위해서는 테스트 코드를 별도로 작성할 필요가 있음
 - 계층별로 각각 도메인을 만들었는데 도메인별로 계층을 만들어보는 방법도 좋을 것 같다고 생각함 --> 다음 프로젝트에서 적용할 예정
 - 클라이언트로부터 받는 데이터에 대한 유효성 검사 추가해서 데이터 무결성 확보(구체적인 검사 조건은 주석으로 추가함) :white_check_mark:
-- DAO에서 예외처리를 구체화하고 상황별로 상태 코드를 다르게 반환하도록 수정 필요함
 - 데이터 조회 시 해당 데이터가 없을 시 IllegalArgumentException을 발생시키고 글로벌 예외처리 시킴(404 반환) :white_check_mark:
