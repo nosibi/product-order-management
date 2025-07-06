@@ -21,8 +21,8 @@
 - 반대로 주문을 취소할 경우 그 수량만큼 상품의 재고가 늘어나게 구현(DB에도 반영됨)
 - 주문 내역을 수정할 때 주문 상품만 수정 가능
 - DB에는 주문자(회원), 주문한 상품(상품)의 id 값으로 표기되지만 주문 내역을 조회하면 이름으로 반환하도록 구현
-![Image](https://github.com/user-attachments/assets/561eca7e-3061-4789-9a0c-415605808e12)
-![Image](https://github.com/user-attachments/assets/720b0523-f673-402f-a40d-c72a22f966e9)
+![Image](https://github.com/user-attachments/assets/a3ed618c-a6c8-4e99-a1f5-933cbc8f7e33)
+![Image](https://github.com/user-attachments/assets/9eeae508-3d43-4e70-9f02-097f7cf8dd34)
 ## 6. 보완할 점
 - 회원 등급에 따른 가격 할인을 적용하는 기능을 추가 구현 :white_check_mark:
 - 회원의 이름으로 주문 내역 리스트를 조회, 동명이인 회원 리스트를 조회하는 기능 구현 ----> QueryDSL을 사용하여 CustomRepository 구성 필요 :white_check_mark:
